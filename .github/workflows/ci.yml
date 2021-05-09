@@ -2,6 +2,9 @@ name: ci
 on:
   push:
 
+env:
+  HUSKY: 0
+
 jobs:
   check:
     runs-on: ubuntu-latest
