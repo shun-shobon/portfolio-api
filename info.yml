@@ -1,0 +1,118 @@
+basic:
+  name: Shuntaro Nishizawa
+  aka: SHUN/しゅん
+  birthday: 2003-04-22
+  school: National Institute of Technology, Nagano College
+  department: Electronic Information Engineering
+
+skills:
+  - name: Frontend
+    skills:
+      - name: JavaScript
+      - name: TypeScript
+      - name: HTML5 / Pug
+      - name: CSS3 / SCSS
+      - name: React
+      - name: Next.js
+      - name: Three.js
+      - name: Apollo Client
+      - name: Webpack
+  - name: Backend
+    skills:
+      - name: Node.js
+      - name: Fastify
+      - name: Apollo Server
+      - name: Prisma
+      - name: MySQL
+      - name: PostgreSQL
+  - name: Infrastructure
+    skills:
+      - name: Linux
+      - name: Google Cloud Platform
+      - name: Firebase
+      - name: Docker
+      - name: Podman
+      - name: Vagrant
+  - name: Misc
+    skills:
+      - name: Haskell
+      - name: WebRTC
+      - name: Git / GitHub
+      - name: GitHub Actions
+      - name: Vim / NeoVim
+      - name: GraphQL
+      - name: CDN
+
+histories:
+  - date: 2003-04-22
+    title: Birthday
+  - date: 2019-04-04
+    title: admitted to National Institute of Technology, Nagano College
+    links:
+      - name: Official site
+        url: https://www.nagano-nct.ac.jp
+  - date: 2020-03-21
+    title: joined Approvers
+    links:
+      - name: Official site
+        url: https://approvers.dev
+  - date: 2020-04-04
+    title: launched AtCoder Notify
+    links:
+      - name: Site
+        url: https://atcoder-bot.firebaseapp.com
+      - name: Code
+        url: https://github.com/shun-shobon/atcoder-notice-bot
+  - date: 2020-05-04
+    title: participated TwoGate Dev Camp 2020 Spring
+    links:
+      - name: Official site
+        url: https://devcamp.twogate.com/2020
+  - date: 2020-08-17
+    title: participated Open Hack U 2020 Online Vol.1
+    links:
+      - name: Official site
+        url: https://hacku.yahoo.co.jp/hacku2020online1
+      - name: Code
+        url: https://github.com/ProvinDevs/2020vol1-frontend
+      - name: Presentation
+        url: https://youtu.be/bQW1SYFAc2Q?t=2090
+  - date: 2020-11-30
+    title: joined C-Style inc.
+    links:
+      - name: Official site
+        url: https://c-style.net
+  - date: 2021-01-23
+    title: receive the highest award at Supporterz Winter Hackathon
+    links:
+      - name: Official site
+        url: https://talent.supporterz.jp/events/b5537711-bef6-43f9-9465-3e7656e55b6e
+      - name: Code
+        url: https://github.com/approvers/genkainet
+  - date: 2021-03-15
+    title: participated Open Hack U 2020 Online Vol.5
+    links:
+      - name: Official site
+        url: https://hacku.yahoo.co.jp/hacku2020online5
+      - name: Code
+        url: https://github.com/ProvinDevs/2020vol5-frontend
+      - name: Presentation
+        url: https://youtu.be/KG09AJPwhqo?t=1180
+
+contacts:
+  - name: GitHub
+    uri: https://github.com/shun-shobon
+  - name: Twitter
+    uri: https://twitter.com/shun_shobon
+  - name: Facebook
+    uri: https://facebook.com/shunshobon
+  - name: Qiita
+    uri: https://qiita.com/shun-shobon
+  - name: Keybase
+    uri: https://keybase.io/shunshobon
+  - name: Speaker Deck
+    uri: https://speakerdeck.com/shunshobon
+  - name: Wantedly
+    uri: https://wantedly.com/id/shun_shobon
+  - name: LAPRAS
+    uri: https://lapras.com/public/JSZGOUP
