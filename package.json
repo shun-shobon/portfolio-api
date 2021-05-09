@@ -7,6 +7,7 @@
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "ts-node src/index.ts",
+    "generate": "graphql-codegen --config codegen.yml",
     "fix": "run-s lint format",
     "check": "run-p *:check",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,ts}\"",
@@ -32,7 +33,15 @@
     "url": "https://github.com/shun-shobon/portfolio-api/issues"
   },
   "homepage": "https://github.com/shun-shobon/portfolio-api#readme",
+  "dependencies": {
+    "graphql": "^15.5.0"
+  },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.21.4",
+    "@graphql-codegen/introspection": "^1.18.2",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "@graphql-codegen/typescript-document-nodes": "^1.17.11",
+    "@graphql-codegen/typescript-resolvers": "^1.19.1",
     "@types/node": "^15.0.2",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",

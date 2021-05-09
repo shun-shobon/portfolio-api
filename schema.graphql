@@ -1,0 +1,7 @@
+type Query {
+    ok: Boolean!
+}
+
+schema {
+    query: Query
+}
