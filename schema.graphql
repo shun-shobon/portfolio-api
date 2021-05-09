@@ -4,6 +4,7 @@ schema {
 
 type Query {
     basic: Basic!
+    skills: [Skill!]!
     histories: [History!]!
     contacts: [Contact!]!
 }
@@ -14,6 +15,12 @@ type Basic {
     birthday: String!
     school: String!
     department: String!
+}
+
+type Skill {
+    name: String!
+    uri: String
+    sub: [Skill!]
 }
 
 type History {
