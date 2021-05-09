@@ -5,6 +5,7 @@ schema {
 type Query {
     basic: Basic!
     histories: [History!]!
+    contacts: [Contact!]!
 }
 
 type Basic {
@@ -25,4 +26,10 @@ type History {
 type Link {
     name: String!
     url: String!
+}
+
+type Contact {
+    name: String!
+    uri: String!
+    icon: String
 }
