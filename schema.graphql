@@ -1,7 +1,15 @@
-type Query {
-    ok: Boolean!
-}
-
 schema {
     query: Query
+}
+
+type Query {
+    basic: Basic!
+}
+
+type Basic {
+    name: String!
+    aka: String!
+    birthday: String!
+    school: String!
+    department: String!
 }
