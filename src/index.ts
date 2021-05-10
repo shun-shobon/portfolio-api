@@ -16,6 +16,10 @@ async function main(): Promise<void> {
     schema,
   });
 
+  server.get("/healthz", async (request, reply) => {
+    await reply.send("OK");
+  });
+
   await server.listen(3000);
   console.log("listen on http://localhost:3000");
 }
