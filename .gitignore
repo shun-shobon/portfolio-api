@@ -1,4 +1,7 @@
 node_modules/
+
+schema.graphql
+
 dist/
-src/generated/
-graphql.schema.json
+
+.env
