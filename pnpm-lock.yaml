@@ -21,11 +21,13 @@ specifiers:
   prettier: ^2.2.1
   ts-node: ^9.1.1
   typescript: ^4.2.4
+  yaml: ^1.10.2
 
 dependencies:
   fastify: 3.15.1
   graphql: 15.5.0
   mercurius: 7.6.1
+  yaml: 1.10.2
 
 devDependencies:
   '@graphql-codegen/cli': 1.21.4_1a945c7d60cbff9224f13e2cebf9e075
@@ -5030,7 +5032,6 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-    dev: true
 
   /yargs-parser/18.1.3:
     resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
