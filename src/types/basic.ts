@@ -1,4 +1,4 @@
-import { objectType } from "nexus";
+import { objectType, extendType } from "nexus";
 
 export const Basic = objectType({
   name: "Basic",
@@ -8,5 +8,17 @@ export const Basic = objectType({
     t.nonNull.string("birthday");
     t.nonNull.string("school");
     t.nonNull.string("department");
+  },
+});
+
+export const basicQuery = extendType({
+  type: "Query",
+  definition(t) {
+    t.nonNull.field("basic", {
+      type: Basic,
+      resolve(_root, _args, { info }) {
+        return info.basic;
+      },
+    });
   },
 });

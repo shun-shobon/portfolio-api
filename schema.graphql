@@ -28,7 +28,10 @@ type Link {
 }
 
 type Query {
-  ok: Boolean!
+  basic: Basic!
+  contacts: [Contact!]!
+  histories: [History!]!
+  skills: [SkillCategory!]!
 }
 
 type Skill {
@@ -37,6 +40,6 @@ type Skill {
 }
 
 type SkillCategory {
-  icon: [Skill!]!
   name: String!
+  skills: [Skill!]!
 }

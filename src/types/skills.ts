@@ -1,10 +1,10 @@
-import { objectType } from "nexus";
+import { extendType, objectType } from "nexus";
 
 export const SkillCategory = objectType({
   name: "SkillCategory",
   definition(t) {
     t.nonNull.string("name");
-    t.nonNull.list.nonNull.field("icon", { type: Skill });
+    t.nonNull.list.nonNull.field("skills", { type: Skill });
   },
 });
 
@@ -13,5 +13,17 @@ export const Skill = objectType({
   definition(t) {
     t.nonNull.string("name");
     t.string("icon");
+  },
+});
+
+export const skillsQuery = extendType({
+  type: "Query",
+  definition(t) {
+    t.nonNull.list.nonNull.field("skills", {
+      type: SkillCategory,
+      resolve(_root, _args, { info }) {
+        return info.skills;
+      },
+    });
   },
 });

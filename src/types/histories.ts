@@ -1,4 +1,4 @@
-import { objectType } from "nexus";
+import { extendType, objectType } from "nexus";
 
 export const History = objectType({
   name: "History",
@@ -14,5 +14,17 @@ export const Link = objectType({
   definition(t) {
     t.nonNull.string("name");
     t.nonNull.string("url");
+  },
+});
+
+export const historiesQuery = extendType({
+  type: "Query",
+  definition(t) {
+    t.nonNull.list.nonNull.field("histories", {
+      type: History,
+      resolve(_root, _args, { info }) {
+        return info.histories;
+      },
+    });
   },
 });
