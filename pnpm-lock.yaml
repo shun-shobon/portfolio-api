@@ -4,6 +4,7 @@ specifiers:
   '@types/node': ^15.0.2
   '@typescript-eslint/eslint-plugin': ^4.22.1
   '@typescript-eslint/parser': ^4.22.1
+  dotenv: ^9.0.1
   eslint: ^7.26.0
   eslint-config-prettier: ^8.3.0
   fastify: ^3.15.1
@@ -29,6 +30,7 @@ devDependencies:
   '@types/node': 15.0.2
   '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
   '@typescript-eslint/parser': 4.22.1_eslint@7.26.0+typescript@4.2.4
+  dotenv: 9.0.1
   eslint: 7.26.0
   eslint-config-prettier: 8.3.0_eslint@7.26.0
   husky: 6.0.0
@@ -583,6 +585,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: true
+
+  /dotenv/9.0.1:
+    resolution: {integrity: sha512-W8FNeNnnvJoYfgkFRKzp8kTgz0T2YY4TJ9xy1Ma0hSebPTK8iquRtpG12TUrSTX5zIN9D/wSLEEuI+Ad35tlyw==}
+    engines: {node: '>=10'}
     dev: true
 
   /ee-first/1.1.1:
