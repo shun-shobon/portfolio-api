@@ -4,6 +4,7 @@ import * as fs from "fs/promises";
 import * as path from "path";
 
 import type { Resolvers } from "./generated/graphql";
+import { createContent } from "./context";
 
 async function main(): Promise<void> {
   const server = fastify();
@@ -18,6 +19,7 @@ async function main(): Promise<void> {
 
   server.register(mercurius, {
     graphiql: "playground",
+    context: await createContent(),
     schema,
     resolvers,
   });

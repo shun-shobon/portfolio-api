@@ -8,6 +8,7 @@ generates:
       - "typescript-resolvers"
       - "typescript-document-nodes"
     config:
+      contextType: ../context#Context
       avoidOptionals:
         field: true
         inputValue: true
