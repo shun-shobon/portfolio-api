@@ -12,7 +12,7 @@ type HandleContext = (
   reply: FastifyReply,
 ) => Promise<Context>;
 
-export async function createContent(): Promise<HandleContext> {
+export async function buildContent(): Promise<HandleContext> {
   const info = await readInformation();
   return async (request, reply) => ({ request, reply, info });
 }
