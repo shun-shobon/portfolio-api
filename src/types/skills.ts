@@ -1,4 +1,4 @@
-import { extendType, objectType } from "nexus";
+import { extendType, objectType, stringArg, nonNull } from "nexus";
 
 export const SkillCategory = objectType({
   name: "SkillCategory",
@@ -23,6 +23,16 @@ export const skillsQuery = extendType({
       type: SkillCategory,
       resolve(_root, _args, { info }) {
         return info.skills;
+      },
+    });
+
+    t.field("skill", {
+      type: Skill,
+      args: {
+        name: nonNull(stringArg()),
+      },
+      resolve(_root, args, { info }) {
+        return info.skills.find(({ name }) => name === args.name) ?? null;
       },
     });
   },
