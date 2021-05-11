@@ -19,7 +19,7 @@ export async function buildServer(config: Config): Promise<FastifyInstance> {
     context,
   });
 
-  server.get("/healthz", async (request, reply) => {
+  server.get("/healthcheck", async (request, reply) => {
     await reply.send("OK");
   });
 
