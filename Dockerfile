@@ -26,8 +26,7 @@ RUN npm install -g pnpm && pnpm install --frozen-lockfile
 
 FROM gcr.io/distroless/nodejs:14
 
-ENV HUSKY=0 \
-    NODE_ENV="production"
+ENV NODE_ENV="production"
 
 WORKDIR /app
 
