@@ -24,6 +24,7 @@ interface SkillCategory {
 
 interface Skill {
   name: string;
+  level: number;
   icon?: string;
 }
 

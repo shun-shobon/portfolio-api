@@ -12,6 +12,7 @@ export const Skill = objectType({
   name: "Skill",
   definition(t) {
     t.nonNull.string("name");
+    t.nonNull.int("level");
     t.string("icon");
   },
 });

@@ -9,39 +9,67 @@ skills:
   - name: Frontend
     skills:
       - name: JavaScript
+        level: 95
       - name: TypeScript
+        level: 95
       - name: HTML5 / Pug
+        level: 80
       - name: CSS3 / SCSS
+        level: 70
       - name: React
+        level: 90
       - name: Next.js
+        level: 85
       - name: Three.js
+        level: 60
       - name: Apollo Client
+        level: 75
       - name: Webpack
+        level: 85
   - name: Backend
     skills:
       - name: Node.js
+        level: 95
       - name: Fastify
+        level: 80
       - name: Apollo Server
+        level: 70
       - name: Prisma
+        level: 70
       - name: MySQL
+        level: 65
       - name: PostgreSQL
+        level: 60
   - name: Infrastructure
     skills:
       - name: Linux
+        level: 70
       - name: Google Cloud Platform
+        level: 60
       - name: Firebase
+        level: 75
       - name: Docker
+        level: 80
       - name: Podman
+        level: 60
       - name: Vagrant
+        level: 60
   - name: Misc
     skills:
       - name: Haskell
+        level: 50
       - name: WebRTC
+        level: 70
       - name: Git / GitHub
+        level: 95
       - name: GitHub Actions
+        level: 95
       - name: Vim / NeoVim
+        level: 95
       - name: GraphQL
+        level: 80
       - name: CDN
+        level: 80
 
 histories:
   - date: 2003-04-22
