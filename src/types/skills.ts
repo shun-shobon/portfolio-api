@@ -28,7 +28,7 @@ export const skillsQuery = extendType({
     });
 
     t.field("skill", {
-      type: Skill,
+      type: SkillCategory,
       args: {
         name: nonNull(stringArg()),
       },
