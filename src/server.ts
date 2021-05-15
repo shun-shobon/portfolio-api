@@ -1,4 +1,5 @@
 import { fastify, FastifyInstance } from "fastify";
+import fastifyCors from "fastify-cors";
 import mercurius from "mercurius";
 import { makeSchema } from "nexus";
 
@@ -17,6 +18,11 @@ export async function buildServer(config: Config): Promise<FastifyInstance> {
     graphiql: config.isProduction ? false : "playground",
     schema,
     context,
+  });
+
+  server.register(fastifyCors, {
+    origin: ["https://shun.technology", "localhost:3000"],
+    methods: ["POST"],
   });
 
   server.get("/healthcheck", async (request, reply) => {

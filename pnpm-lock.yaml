@@ -8,6 +8,7 @@ specifiers:
   eslint: ^7.26.0
   eslint-config-prettier: ^8.3.0
   fastify: ^3.15.1
+  fastify-cors: ^6.0.1
   graphql: ^15.5.0
   husky: ^6.0.0
   lint-staged: ^11.0.0
@@ -21,6 +22,7 @@ specifiers:
 
 dependencies:
   fastify: 3.15.1
+  fastify-cors: 6.0.1
   graphql: 15.5.0
   mercurius: 7.6.1
   nexus: 1.0.0_graphql@15.5.0
@@ -878,6 +880,13 @@ packages:
 
   /fast-safe-stringify/2.0.7:
     resolution: {integrity: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==}
+    dev: false
+
+  /fastify-cors/6.0.1:
+    resolution: {integrity: sha512-eeNTdQNmBsqHL87we+X74n9+H0hTDX0cXGVdyZjGf9om2pZfigAZwuSxaUUE2pLP9tp5+rEd5kejKQ8+ZCvAoA==}
+    dependencies:
+      fastify-plugin: 3.0.0
+      vary: 1.1.2
     dev: false
 
   /fastify-error/0.3.1:
@@ -2318,6 +2327,11 @@ packages:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
     dev: true
+
+  /vary/1.1.2:
+    resolution: {integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=}
+    engines: {node: '>= 0.8'}
+    dev: false
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
