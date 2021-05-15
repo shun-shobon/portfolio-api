@@ -21,7 +21,7 @@ export async function buildServer(config: Config): Promise<FastifyInstance> {
   });
 
   server.register(fastifyCors, {
-    origin: ["https://shun.technology", "localhost:3000"],
+    origin: "*",
     methods: ["POST"],
   });
 
