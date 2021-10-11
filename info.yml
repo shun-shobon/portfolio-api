@@ -56,6 +56,8 @@ skills:
         level: 60
   - name: Misc
     skills:
+      - name: Rust
+        lavel: 60
       - name: Haskell
         level: 50
       - name: WebRTC
@@ -126,6 +128,13 @@ histories:
         url: https://github.com/ProvinDevs/2020vol5-frontend
       - name: Presentation
         url: https://youtu.be/KG09AJPwhqo?t=1180
+  - date: 2021-10-10
+    title: receive the special prize at Kosen Programming Contest
+    links:
+      - name: Official site
+        url: https://www.procon.gr.jp/?page_id=77404/#election_result
+      - name: Presentation
+        url: https://youtu.be/GpcsrOywmHA?t=15297
 
 contacts:
   - name: GitHub
