@@ -57,7 +57,7 @@ skills:
   - name: Misc
     skills:
       - name: Rust
-        lavel: 60
+        level: 60
       - name: Haskell
         level: 50
       - name: WebRTC
