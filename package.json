@@ -14,7 +14,7 @@
     "format:check": "prettier --ignore-path .gitignore --check \"**/*.{js,ts}\"",
     "lint": "eslint --ignore-path .gitignore --fix \"**/*.{js,ts}\"",
     "lint:check": "eslint --ignore-path .gitignore \"**/*.{js,ts}\"",
-    "prepare": "pnpm generate && husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts}": [
