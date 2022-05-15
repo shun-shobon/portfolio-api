@@ -24,8 +24,6 @@ jobs:
           version: 6.2.1
           run_install: true
 
-      - run: pnpm generate
-
       - name: Run check
         run: pnpm check
 
@@ -46,8 +44,6 @@ jobs:
         with:
           version: 6.2.1
           run_install: true
-
-      - run: pnpm generate
 
       - name: Run check
         run: pnpm build
