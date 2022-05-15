@@ -21,7 +21,7 @@ ENV HUSKY=0 \
 COPY --from=build /work/package.json /work/pnpm-lock.yaml /work/info.yml /work/
 COPY --from=build /work/dist /work/dist
 
-RUN npm install -g pnpm && pnpm install --frozen-lockfile
+RUN npm install -g pnpm && pnpm install --frozen-lockfile --ignore-scripts
 
 
 FROM gcr.io/distroless/nodejs:14
